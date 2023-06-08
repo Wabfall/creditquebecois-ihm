@@ -1,0 +1,75 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Création de joueur API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "/"
+    }
+  ],
+  "paths": {
+    "/joueur": {
+      "post": {
+        "tags": [
+          "Joueur"
+        ],
+        "summary": "Créer un nouveau joueur",
+        "operationId": "creerJoueur",
+        "requestBody": {
+          "description": "Informations du joueur à créer",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequeteJoueur"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Joueur créé avec succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Joueur"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "requeteJoueur"
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "RequeteJoueur": {
+        "type": "object",
+        "properties": {
+          "pseudo": {
+            "type": "string"
+          },
+          "age": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "Joueur": {
+        "type": "object",
+        "properties": {
+          "pseudo": {
+            "type": "string"
+          },
+          "age": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      }
+    }
+  }
+}

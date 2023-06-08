@@ -1,0 +1,87 @@
+swagger: '2.0'
+info:
+  version: "1.0.0"
+  title: API des images
+  description: API pour gérer les images
+paths:
+  /images/envoie:
+    post:
+      summary: Ajouter une image dans la base de données
+      consumes:
+        - multipart/form-data
+      parameters:
+        - in: query
+          name: idSalon
+          required: true
+          description: id du Salon
+          type: string
+        - in: query
+          name: idJoueur
+          required: true
+          description: idJoueur
+          type: string
+        - in: formData
+          name: image
+          required: true
+          description: Image à ajouter
+          type: file
+      responses:
+        200:
+          description: Image ajoutée avec succès
+        400:
+          description: Requête invalide
+
+  /images/recevoir/fin-tour:
+    post:
+      summary: Récupérer les autres images de fin
+      parameters:
+        - in: query
+          name: idSalon
+          required: true
+          description: id du Salon
+          type: string
+        - in: query
+          name: idJoueur
+          required: true
+          description: idJoueur
+          type: string
+      responses:
+        200:
+          description: Images récupérées avec succès
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/Image"
+        400:
+          description: Requête invalide
+
+  /images/recevoir/debut-tour:
+    post:
+      summary: Récupérer l'image au début du tour
+      parameters:
+        - in: query
+          name: idSalon
+          required: true
+          description: idSalon
+          type: string
+      responses:
+        200:
+          description: Image récupérée avec succès
+          schema:
+            $ref: "#/definitions/Image"
+        400:
+          description: Requête invalide
+
+definitions:
+  Image:
+    type: object
+    properties:
+      nomFichier:
+        type: string
+        description: nom de l'image
+      cheminImage:
+        type: string
+        description: chemin pour récupérer l'image
+      idImage:
+        type: string
+        description: id de l'Image
