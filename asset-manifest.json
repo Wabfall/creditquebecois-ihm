@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/creditquebecois-ihm/static/css/main.e6c13ad2.css",
+    "main.js": "/creditquebecois-ihm/static/js/main.52c8cf5b.js",
+    "static/js/787.e41d70ca.chunk.js": "/creditquebecois-ihm/static/js/787.e41d70ca.chunk.js",
+    "index.html": "/creditquebecois-ihm/index.html",
+    "main.e6c13ad2.css.map": "/creditquebecois-ihm/static/css/main.e6c13ad2.css.map",
+    "main.52c8cf5b.js.map": "/creditquebecois-ihm/static/js/main.52c8cf5b.js.map",
+    "787.e41d70ca.chunk.js.map": "/creditquebecois-ihm/static/js/787.e41d70ca.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.52c8cf5b.js"
+  ]
+}
