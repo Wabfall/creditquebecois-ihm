@@ -42,57 +42,64 @@ const Accueil = () => {
                     </GridItem>
                 </Grid>
             </Flex>
-            <Divider mt={8} mb={8} />
+            <Divider mt={8} mb={8}/>
             <Box textAlign="center">
                 <Heading size="md" mb={4}>
                     À propos de nous
                 </Heading>
                 <Text>
-                    Chez Crédit Québécois, nous croyons en la simplicité, la transparence et la satisfaction de nos clients.
-                    Nous sommes une banque locale qui offre une gamme complète de services financiers adaptés aux besoins de la population du lac St Jean.
-                    Que vous souhaitiez ouvrir un compte d'épargne, obtenir un prêt hypothécaire ou simplement consulter votre solde, nous sommes là pour vous.
+                    Chez Crédit Québécois, nous croyons en la simplicité, la transparence et la satisfaction de nos
+                    clients.
+                    Nous sommes une banque locale qui offre une gamme complète de services financiers adaptés aux
+                    besoins de la population du lac St Jean.
+                    Que vous souhaitiez ouvrir un compte d'épargne, obtenir un prêt hypothécaire ou simplement consulter
+                    votre solde, nous sommes là pour vous.
                 </Text>
             </Box>
-            <Divider mt={8} mb={8} />
+            <Divider mt={8} mb={8}/>
             <Box textAlign="center">
                 <Heading size="md" mb={4}>
                     Nos services
                 </Heading>
                 <Text>
-                    Chez Crédit Québécois, nous offrons une variété de services bancaires pour répondre à vos besoins financiers :
+                    Chez Crédit Québécois, nous offrons une variété de services bancaires pour répondre à vos besoins
+                    financiers :
                 </Text>
                 <Box mt={4} mb={4}>
                     <Grid templateColumns="repeat(3, 1fr)" gap={4}>
                         <GridItem>
                             <Box p={4} borderWidth="1px" borderRadius="lg">
-                                <FaMoneyCheckAlt />
+                                <FaMoneyCheckAlt/>
                                 <Heading size="sm" mb={2}>
                                     Comptes bancaires
                                 </Heading>
                                 <Text>
-                                    Ouvrez un compte courant ou un compte d'épargne pour gérer vos finances quotidiennes et épargner pour l'avenir.
+                                    Ouvrez un compte courant ou un compte d'épargne pour gérer vos finances quotidiennes
+                                    et épargner pour l'avenir.
                                 </Text>
                             </Box>
                         </GridItem>
                         <GridItem>
                             <Box p={4} borderWidth="1px" borderRadius="lg">
-                                <FaCreditCard />
+                                <FaCreditCard/>
                                 <Heading size="sm" mb={2}>
                                     Cartes de crédit
                                 </Heading>
                                 <Text>
-                                    Profitez de nos cartes de crédit avec des avantages exclusifs et des programmes de récompenses attrayants.
+                                    Profitez de nos cartes de crédit avec des avantages exclusifs et des programmes de
+                                    récompenses attrayants.
                                 </Text>
                             </Box>
                         </GridItem>
                         <GridItem>
                             <Box p={4} borderWidth="1px" borderRadius="lg">
-                                <FaChartLine />
+                                <FaChartLine/>
                                 <Heading size="sm" mb={2}>
                                     Investissements
                                 </Heading>
                                 <Text>
-                                    Explorez nos options d'investissement pour faire fructifier votre argent et atteindre vos objectifs financiers.
+                                    Explorez nos options d'investissement pour faire fructifier votre argent et
+                                    atteindre vos objectifs financiers.
                                 </Text>
                             </Box>
                         </GridItem>
@@ -101,7 +108,7 @@ const Accueil = () => {
                 <Button colorScheme="blue" size="lg">
                     Découvrez tous nos services
                 </Button>
-                <Divider mt={8} mb={8} />
+                <Divider mt={8} mb={8}/>
                 <Box textAlign="center">
                     <Heading size="md" mb={4}>
                         Contactez-nous
@@ -130,7 +137,7 @@ const Accueil = () => {
                         </Grid>
                     </Box>
                 </Box>
-                <Divider mt={8} mb={8} />
+                <Divider mt={8} mb={8}/>
             </Box>
         </Box>
     )

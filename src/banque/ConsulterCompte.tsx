@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import axios from "axios";
-import { Box, Divider, Flex, Heading, Table, Tbody, Td, Th, Thead, Tr } from "@chakra-ui/react";
-import { format, parseISO } from "date-fns";
-import { fr } from "date-fns/locale";
+import {Box, Divider, Heading, Table, Tbody, Td, Th, Thead, Tr} from "@chakra-ui/react";
+import {format, parseISO} from "date-fns";
+import {fr} from "date-fns/locale";
 import ConnexionCompte from "./composants/ConnexionCompte";
 
 interface CompteData {
@@ -20,7 +20,7 @@ interface CompteData {
 
 const formatDate = (isoDate: string): string => {
     const date = parseISO(isoDate);
-    const formattedDate = format(date, "EEEE d MMMM", { locale: fr });
+    const formattedDate = format(date, "EEEE d MMMM", {locale: fr});
     return formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
 };
 
@@ -50,7 +50,7 @@ const ConsulterCompte = () => {
                     <Heading size="xl" textAlign="center" mb={4}>
                         Consulter compte
                     </Heading>
-                    <Divider mb={"1.5em"} />
+                    <Divider mb={"1.5em"}/>
                     <Box textAlign="center">
                         <Heading size="xl" mb={4}>
                             {compteData.nomDeCompte}
@@ -92,7 +92,7 @@ const ConsulterCompte = () => {
                     </Box>
                 </Box>
             ) : (
-                <ConnexionCompte handleSeConnecter={handleConsulterCompte} />
+                <ConnexionCompte handleSeConnecter={handleConsulterCompte}/>
             )}
         </Box>
     );
